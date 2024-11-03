@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="sanitize.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script defer src="index.js"></script>
+
+    <title>NoteKeeper</title>
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="header__title">NoteKeeper</h1>
+    </header>
+    <main class="main">
+        <section class="form">
+            <h2 class="form__title">New Note Form</h2>
+            <form class="form__container">
+                <label for="title" class="form__label">Title</label>
+                    <input type="text" id="title" name="title" class="form__input" required />
+                </label>
+                <label for="content" class="form__label">Content</label>
+                    <input type="text" id="content" name="content" class="form__input" required />
+                </label>
+                <label for="priority" class="form__label">Priority</label>
+                    <select id="priority" name="priority" class="form__select">
+                        <option value="select" selected disabled>Select Priority</option>
+                        <option value="low">Low</option>
+                        <option value="medium">Medium</option>
+                        <option value="high">High</option>
+                    </select>
+                <button type="submit" class="form__button">Add Note</button>
+        </section>
+
+        <section class="notes">
+            <h2 class="notes__title">Notes List</h2>
+        </section>
+
+    </main>
+</body>
+
+</html>
