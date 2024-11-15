@@ -1,6 +1,6 @@
 let form = document.querySelector(".form__container");
 
-form.onsubmit = function(event) {
+form.addEventListener("submit", function(event) {
     event.preventDefault();
 
     let title = document.getElementById("title").value;
@@ -38,4 +38,4 @@ form.onsubmit = function(event) {
     newArticle.appendChild(newPriority);
 
     form.reset();
-};
+});
